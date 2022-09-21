@@ -1,0 +1,53 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px 300px 100px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+
+}
+body>header{
+    grid-area:header;
+}
+body>main{
+    grid-area: main;
+}
+body>footer{
+    grid-area: footer;
+}
+header{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+header{
+    background-color: blue;
+}
+h1{
+    text-align: center;
+}
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    background-color: grey;
+    height: auto;
+    width: auto;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid blue;
+    
+}
+.food{
+    background-color: red;
+    border: .25vmin solid blue;
+}
