@@ -8,7 +8,6 @@ document.addEventListener('keydown',movement =>{
             case 'ArrowDown':
                 if(lastDirection.y !== 0) break
                 direction = {x: 0, y: 1}
-                console.log(direction)
                 break;
             case 'ArrowUp':
                 if(lastDirection.y !== 0) break
@@ -25,7 +24,6 @@ document.addEventListener('keydown',movement =>{
             case 's':
                 if(lastDirection.y !== 0) break
                 direction = {x: 0, y: 1}
-                console.log(direction)
                 break;
             case 'w':
                 if(lastDirection.y !== 0) break

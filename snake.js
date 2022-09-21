@@ -1,8 +1,8 @@
 import { inputDirection } from "./input.js"
 
-export const snakeSpeed = 2
+export const snakeSpeed = 5
 let newSegments = 0
-const snakeBody = [{x: 9, y: 10}/* // {x: 8, y: 10},// {x: 7, y: 10} */]
+export const snakeBody = [{x: 9, y: 10}]
 
 export function updateSnake(){
     addSegments()
@@ -29,12 +29,12 @@ export function expandSnake(amount){
 }
 
 export function onSnake(position, {ignoreHead = false} = {}){
-    return snakeBody.some((segment, index) => {
+    return (snakeBody.some((segment, index) => {
         if(ignoreHead && index === 0) {
             return false
         }
         return equalPositions(segment, position)
-    })
+    }))
 }
 
 function equalPositions(pos1, pos2){

@@ -24,8 +24,10 @@ header{
 }
 
 main{
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* grid-template-columns: 30% 70%; */
 
 }
 header{
@@ -33,14 +35,50 @@ header{
 }
 h1{
     text-align: center;
+    padding: 0;
+}
+/* .nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-around;
+    /* width: 30%; */
+/* } */
+img{
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.setting ul{
+    /* position: absolute; */
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    /*flex-direction: column; */
+}
+.settings:hover ul{
+    opacity: 1;
+ } */
+
+#play-stats{
+margin: 50px;
 }
 #gameboard{
+    /* position: relative; */
+    padding: 5px;
+    /* margin: 40px; */
+    align-self: center;
     display: grid;
-    grid-template-columns: repeat(21, 1fr);
-    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
     background-color: grey;
-    height: auto;
-    width: auto;
+    height: 100vmin;
+    width: 100vmin;
+    
 }
 .snake{
     background-color: purple;
