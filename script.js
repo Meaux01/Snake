@@ -3,24 +3,24 @@ import { drawFood, updateFood} from "./food.js"
 import { outsideGrid } from './grid.js'
 
 // Player Scoreboard Unfinished
-const playerName = document.querySelector('#Name')
-const updateName = document.querySelector("input")
-const startBtn = document.querySelector('#start') 
+// const playerName = document.querySelector('#Name')
+// const updateName = document.querySelector("input")
+// const startBtn = document.querySelector('#start') 
 const resetBtn = document.querySelector('#reset')
 const img = document.createElement('img')
 
 img.src ='./images/snake.jpg'
-console.dir(updateName)
+// console.dir(updateName)
 
-const nameUpdate = () => {
-    // updateName.textContent = updateName.value
-    if (updateName.value === ''){
-        return
-    }
-    playerName.textContent = updateName.value
-    updateName.value = null
-}
-startBtn.addEventListener('click',nameUpdate)
+// const nameUpdate = () => {
+//     // updateName.textContent = updateName.value
+//     if (updateName.value === ''){
+//         return
+//     }
+//     playerName.textContent = updateName.value
+//     updateName.value = null
+// }
+// startBtn.addEventListener('click',nameUpdate)
 
 const reset = () => {
     location.reload()
@@ -48,7 +48,6 @@ function gameLoop(currentTime){
     if(gameOver){
         location.reload()
         // if(confirm('You Lose, Press Okay to try again')){
-            
         // }
         return
     }

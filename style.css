@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 300px 300px 100px;
+    grid-template-rows: 100px 300px 300px;
     grid-template-areas:
     "header header header"
     "main main main"
-    "main main main"
-    "footer footer footer";
-    padding:5%;
+    "main main main";
     align-content: center;
     justify-content: space-around;
     /* box-shadow: black 20px 20px 20px */
+    background-color: black;
 }
 body>header{
     grid-area:header;
@@ -22,8 +23,11 @@ body>footer{
     grid-area: footer;
 }
 header{
-    display: grid;
-    grid-template-columns: 80% 20%;
+    /* background-color: blue; */
+    background-image: linear-gradient(rgba(85, 85, 88, 0.5), rgba(85, 85, 88, 0.5)),
+    url("./images/2.png");
+    /* display: grid; */
+    /* grid-template-columns: ; */
 }
 
 main{
@@ -33,43 +37,17 @@ main{
     grid-template-columns: 30% 70%;
 
 }
-header{
-    background-color: blue;
-}
-h1{
+
+h1{ font-family: 'Bungee Spice', cursive;
     text-align: center;
+    background-image: linear-gradient(rgba(85, 85, 88, 0.5), rgba(85, 85, 88, 0.5)),
+                  url("./images/2.png");
     padding: 0;
 }
-.nav{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    justify-content: space-around;
-    /* width: 30%; */
-} 
-img{
-    position: relative;
-    align-self: center;
-    justify-self: center;
-    width: 50%;
+main{
+    background-color: black;
 }
 
-.setting ul{
-    /* position: absolute; */
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    top: 0;
-    opacity: 0;
-    /*flex-direction: column; */
-}
-.settings:hover ul{
-    opacity: 1;
- } */
-
-#play-stats{
-margin: 50px;
-}
 #gameboard{
     position: relative;
     padding: 5px;
@@ -78,17 +56,40 @@ margin: 50px;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
-    background-color: whitesmoke;
-    height: 100vmin;
-    width: 100vmin;
-    box-shadow: black 20px 20px 20px;
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(rgba(85, 85, 88, 0.5), rgba(85, 85, 88, 0.5)),
+    url("./images/2.png");
+    height: 400px;
+    width: 400px;
+    box-shadow: rgb(185, 182, 182) 20px 20px 20px;
 }
 .snake{
-    background-color: purple;
-    border: .25vmin solid blue;
+    background-color: rgb(145, 80, 206);
+    border-top: .25vmin solid rgb(0, 0, 0);
+    border-bottom: .25vmin solid rgb(0, 0, 0);
     
 }
 .food{
-    background-color: red;
-    border: .25vmin solid blue;
+    background-color: rgba(255, 0, 0, 0.856);
+    border: .25vmin solid rgb(0, 0, 0);
+}
+#scoreboard{
+    background-color: black;
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+    box-shadow: rgb(185, 182, 182) 20px 20px 20px 20px 
+}
+.score{
+    font-family: 'Bungee Spice', cursive;
+}
+.button{
+    border-color: #fa8231;
+    border-radius: 2px ;
+    background-color: black;
+    font-family: 'Bungee Spice', cursive;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: black;
 }
