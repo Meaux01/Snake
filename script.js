@@ -67,8 +67,8 @@ function render(){
 // console.dir(checkDeath)
 function checkDeath() {
     // console.log(checkDeath)
-    gameOver = outsideGrid(snakeBody[0]) || snakeIntersection()
-    // gameOver = outsideGrid(snakeHead) || snakeIntersection()
+    // gameOver = outsideGrid(snakeBody[0]) || snakeIntersection()
+    gameOver = outsideGrid(snakeHead()) || snakeIntersection()
     // console.log(outsideGrid(snakeBody[0]) || snakeIntersection())
     // gameOver = true
 }
