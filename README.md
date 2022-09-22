@@ -1,6 +1,8 @@
 
 <div align="center">
 <h1><strong>Snake</strong> 
+
+
 <img src="https://media.giphy.com/media/26DN0U3SqKDG2fTFe/giphy.gif" width="px"/></h1>
 
 
