@@ -19,7 +19,7 @@ Snake is an animated gate that was created in 1997 by Taneli Armanato and first 
 ## <strong>Images</strong>
 The following photos will show you how the game looks and the controls used for the game.
 
-![Snake Frame](./images/snake.png)
+![Snake Frame](./images/Snake.png)
 
 ## <strong>Controls</strong>
 ![](./images/marcus-urbenz-cUIl28-EWeI-unsplash.jpg)
