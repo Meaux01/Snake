@@ -1,9 +1,7 @@
-
-
 let direction = {x:0, y:0}
 let lastDirection= {x:0, y:0}
 
-document.addEventListener('keydown',movement =>{
+window.addEventListener('keydown',movement =>{
         switch (movement.key) {
             case 'ArrowDown':
                 if(lastDirection.y !== 0) break
@@ -21,22 +19,22 @@ document.addEventListener('keydown',movement =>{
                 if(lastDirection.x !== 0) break
                 direction = {x:-1, y: 0}
                 break;
-            case 's':
-                if(lastDirection.y !== 0) break
-                direction = {x: 0, y: 1}
-                break;
-            case 'w':
-                if(lastDirection.y !== 0) break
-                direction = {x: 0,y: -1}
-                break;
-            case 'd':
-                if(lastDirection.x !== 0) break
-               direction = {x:1, y:0}
-                break;
-            case 'a':
-                if(lastDirection.x !== 0) break
-                direction = {x:-1, y: 0}
-                break;
+            // case 's':
+            //     if(lastDirection.y !== 0) break
+            //     direction = {x: 0, y: 1}
+            //     break;
+            // case 'w':
+            //     if(lastDirection.y !== 0) break
+            //     direction = {x: 0,y: -1}
+            //     break;
+            // case 'd':
+            //     if(lastDirection.x !== 0) break
+            //    direction = {x:1, y:0}
+            //     break;
+            // case 'a':
+            //     if(lastDirection.x !== 0) break
+            //     direction = {x:-1, y: 0}
+            //     break;
         }
     }   
 )

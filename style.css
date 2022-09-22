@@ -6,8 +6,11 @@ body{
     "header header header"
     "main main main"
     "main main main"
-    "footer footer footer"
-
+    "footer footer footer";
+    padding:5%;
+    align-content: center;
+    justify-content: space-around;
+    /* box-shadow: black 20px 20px 20px */
 }
 body>header{
     grid-area:header;
@@ -24,10 +27,10 @@ header{
 }
 
 main{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-around;
-    /* grid-template-columns: 30% 70%; */
+    grid-template-columns: 30% 70%;
 
 }
 header{
@@ -37,13 +40,13 @@ h1{
     text-align: center;
     padding: 0;
 }
-/* .nav{
+.nav{
     display: flex;
     align-content: center;
     justify-content: center;
     justify-content: space-around;
     /* width: 30%; */
-/* } */
+} 
 img{
     position: relative;
     align-self: center;
@@ -68,17 +71,17 @@ img{
 margin: 50px;
 }
 #gameboard{
-    /* position: relative; */
+    position: relative;
     padding: 5px;
-    /* margin: 40px; */
+    margin: 40px;
     align-self: center;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
-    background-color: grey;
+    background-color: whitesmoke;
     height: 100vmin;
     width: 100vmin;
-    
+    box-shadow: black 20px 20px 20px;
 }
 .snake{
     background-color: purple;
